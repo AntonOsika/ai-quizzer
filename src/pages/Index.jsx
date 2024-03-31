@@ -42,9 +42,11 @@ const Index = () => {
   const [score, setScore] = useState(0);
   const [quizStarted, setQuizStarted] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
+  
   const toast = useToast();
 
   const startQuiz = () => {
+    
     setQuizStarted(true);
     setCurrentQuestion(0);
     setScore(0);
@@ -136,6 +138,7 @@ const Index = () => {
           </Button>
         </VStack>
       )}
+      
     </Box>
   );
 };
