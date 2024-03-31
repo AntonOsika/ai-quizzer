@@ -1,13 +1,12 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Index from "./pages/Index.jsx";
+import { Routes, Route } from "react-router-dom";
+import Leaderboard from "./pages/Leaderboard";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Index />} />
-      </Routes>
-    </Router>
+    <Routes>
+      {}
+      <Route path="/leaderboard" element={<Leaderboard />} />
+    </Routes>
   );
 }
 
