@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button, Heading, Text, VStack, Select, useToast, Flex, keyframes } from "@chakra-ui/react";
 import { FaRobot } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import { kvdb } from "../kvdb";
 
 const questions = [
   {
@@ -127,23 +125,11 @@ const Index = () => {
     );
   };
 
-  const navigate = useNavigate();
-
-  const saveScore = async () => {
-    const name = prompt("Enter your name:");
-    if (name) {
-      await kvdb.set("leaderboard", name, score);
-    }
-  };
-
   return (
     <Box p={8}>
       <Heading as="h1" size="2xl" textAlign="center" mb={8}>
         AGI Quiz <FaRobot />
       </Heading>
-      <Button onClick={() => navigate("/leaderboard")} colorScheme="teal" mb={4}>
-        Leaderboard
-      </Button>
       {!quizStarted && !quizCompleted && (
         <VStack spacing={4}>
           <Text fontSize="xl">Select the number of questions:</Text>
@@ -172,11 +158,8 @@ const Index = () => {
           <Text fontSize="2xl">
             You scored {score} out of {numQuestions}
           </Text>
-          <Button onClick={resetQuiz} colorScheme="blue" size="lg" mr={4}>
+          <Button onClick={resetQuiz} colorScheme="blue" size="lg">
             Play Again
-          </Button>
-          <Button onClick={saveScore} colorScheme="teal" size="lg">
-            Save Score
           </Button>
         </VStack>
       )}

@@ -3,4 +3,3 @@ build = "npm run build"
 
 [gptengineer-app]
 project_id = "9d105c24-f0fd-4986-bd64-38b37bfd8b33"
-openapi = []
