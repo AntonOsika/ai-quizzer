@@ -28,7 +28,26 @@ const questions = [
     options: ["World peace", "Endless paperclips", "A utopian society", "The perfect cup of coffee"],
     answer: "Endless paperclips",
   },
-  // Add more questions...
+  {
+    question: "Where is AGI House located?",
+    options: ["New York", "San Francisco", "London", "Tokyo"],
+    answer: "San Francisco",
+  },
+  {
+    question: "Which of the following is NOT a core value of AGI House?",
+    options: ["Collaboration", "Responsibility", "Secrecy", "Curiosity"],
+    answer: "Secrecy",
+  },
+  {
+    question: "AGI House aims to bring back the _____ life to Silicon Valley.",
+    options: ["startup", "hackathon", "corporate", "party"],
+    answer: "hackathon",
+  },
+  {
+    question: "AGI House believes in the power of _____ to drive innovation.",
+    options: ["money", "competition", "curiosity", "luck"],
+    answer: "curiosity",
+  },
 ];
 
 const spin = keyframes`
