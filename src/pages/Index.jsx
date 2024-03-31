@@ -133,11 +133,9 @@ const Index = () => {
       {!quizStarted && !quizCompleted && (
         <VStack spacing={4}>
           <Text fontSize="xl">Select the number of questions:</Text>
-          <Select value={numQuestions} onChange={(e) => setNumQuestions(parseInt(e.target.value))}>
-            <option value={5}>5</option>
-            <option value={10}>10</option>
-            <option value={15}>15</option>
-            <option value={20}>20</option>
+          <Select value={numQuestions} onChange={(e) => setNumQuestions(parseInt(e.target.value))} width="120px">
+            <option value={5}>5 Questions</option>
+            <option value={10}>10 Questions</option>
           </Select>
           <Button onClick={startQuiz} colorScheme="green" size="lg">
             Start Quiz
