@@ -4,14 +4,24 @@ import { FaRobot } from "react-icons/fa";
 
 const questions = [
   {
-    question: "What does FOOM stand for in the context of AGI?",
-    options: ["Fast Onset Of Madness", "Fairly Obvious Optimization Mistake", "Friendly Omnipotent Overlord Machine", "None of the above"],
-    answer: "None of the above",
-  },
-  {
     question: "What is the primary goal of the AGI House?",
     options: ["Hosting wild parties", "Fostering collaboration among AI researchers", "Building Skynet", "Debating the merits of different pizza toppings"],
     answer: "Fostering collaboration among AI researchers",
+  },
+  {
+    question: "Which of the following is NOT a core value of AGI House?",
+    options: ["Collaboration", "Responsibility", "Secrecy", "Curiosity"],
+    answer: "Secrecy",
+  },
+  {
+    question: "AGI House aims to bring back the _____ life to Silicon Valley.",
+    options: ["startup", "hackathon", "corporate", "party"],
+    answer: "hackathon",
+  },
+  {
+    question: "AGI House believes in the power of _____ to drive innovation.",
+    options: ["money", "competition", "curiosity", "luck"],
+    answer: "curiosity",
   },
   {
     question: "Who is Eliezer Yudkowsky?",
